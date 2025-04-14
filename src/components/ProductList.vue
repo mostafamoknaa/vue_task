@@ -8,9 +8,6 @@
         <div class="product-footer">
           <span class="instock">In Stock: {{ product.instock }}</span>
           <button @click="addToCart(product)" class="add-to-cart">Add to Cart</button>
-          <button @click="toggleWishlist(product)" class="wishlist-btn">
-            {{ wishlistStore.isInWishlist(product.id) ? '♥' : '♡' }}
-          </button>
         </div>
       </div>
     </div>
